@@ -4,26 +4,35 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Web Studio</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
 		<!-- Шапка сайта -->
 		<header>
 			<nav>
-				<a href="./">Web Studio</a>
+				<a href="./" class="logo">
+					<span>Web</span>
+					Studio
+				</a>
 
-				<ul>
-					<li><a href="#">Студия</a></li>
-					<li><a href="#">Портфолио</a></li>
-					<li><a href="#">Контакты</a></li>
+				<ul class="nav">
+					<li><a href="./index.html" class="nav-link">Студия</a></li>
+					<li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+					<li><a href="#" class="nav-link">Контакты</a></li>
 				</ul>
 			</nav>
 
-			<ul>
+			<ul class="contacts">
 				<li>
-					<a href="mailto:info@devstudio.com">info@devstudio.com</a>
+					<a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
 				</li>
 				<li>
-					<a href="tel:+380961111111">+38 096 111 11 11</a>
+					<a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a>
 				</li>
 			</ul>
 		</header>
@@ -31,71 +40,77 @@
 		<!-- Основной контент -->
 		<main>
 			<!-- Секция герой -->
-			<section>
-				<h1>Эффективные решения для вашего бизнеса</h1>
-				<a href="#">Заказать услугу</a>
+			<section class="hero">
+				<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+				<a href="#" class="hero-button">Заказать услугу</a>
 			</section>
 
 			<!-- Секция Преимущества -->
-			<section>
+			<section class="advantages">
 				<h2 hidden>Преимущества</h2>
 
 				<ul>
 					<li>
 						<img src="./img/спутник.svg" alt="Логотип Внимание к деталям" />
-						<h3>Внимание к деталям</h3>
-						<p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+						<h3 class="advantages-title">Внимание к деталям</h3>
+						<p class="advantages-text">
+							Идейные соображения, а также начало повседневной работы по формированию позиции.
+						</p>
 					</li>
 
 					<li>
 						<img src="./img/часы.svg" alt="Логотип Пунктуальность" />
-						<h3>Пунктуальность</h3>
-						<p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+						<h3 class="advantages-title">Пунктуальность</h3>
+						<p class="advantages-text">
+							Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+						</p>
 					</li>
 
 					<li>
 						<img src="./img/монитор.svg" alt="Логотип Планирование" />
-						<h3>Планирование</h3>
-						<p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+						<h3 class="advantages-title">Планирование</h3>
+						<p class="advantages-text">
+							Равным образом консультация с широким активом в значительной степени обуславливает.
+						</p>
 					</li>
 
 					<li>
 						<img src="./img/космонавт.svg" alt="Логотип Современные технологии" />
-						<h3>Современные технологии</h3>
-						<p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+						<h3 class="advantages-title">Современные технологии</h3>
+						<p class="advantages-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
 					</li>
 				</ul>
 			</section>
 
 			<!-- Секция Деятельность -->
-			<section>
-				<h2>Чем мы занимаемся</h2>
+			<section class="work">
+				<h2 class="work-title">Чем мы занимаемся</h2>
 				<ul>
 					<li>
 						<img src="./img/ноутбук.jpg" alt="Работа с десктопные приложениями на ноутбуке" width="370" height="294" />
-						<h3>Десктопные приложения</h3>
+						<h3 class="work-item">Десктопные приложения</h3>
 					</li>
 
 					<li>
 						<img src="./img/смартфон.jpg" alt="Приложения для смартфонов" width="370" height="294" />
-						<h3>Мобильные приложения</h3>
+						<h3 class="work-item">Мобильные приложения</h3>
 					</li>
 
 					<li>
 						<img src="./img/дизайн.jpg" alt="Дизайн на мониторе" width="370" height="294" />
-						<h3>Дизайнерские решения</h3>
+						<h3 class="work-item">Дизайнерские решения</h3>
 					</li>
 				</ul>
 			</section>
 			<!-- Секция Наша команда -->
-			<section>
-				<h2>Наша команда</h2>
+			<section class="team">
+				<h2 class="team-title">Наша команда</h2>
 
 				<ul>
 					<li>
 						<img src="./img/николай-кучеренко.jpg" alt="Product Designer Николай Кучеренко" width="270" height="260" />
-						<h3>Николай Кучеренко</h3>
-						<p>Product Designer</p>
+						<h3 class="team-name">Николай Кучеренко</h3>
+						<p class="team-specialty">Product Designer</p>
 						<ul>
 							<li>
 								<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Instagram">Ссылка на Instagram</a>
@@ -112,8 +127,8 @@
 
 					<li>
 						<img src="./img/ольга-иванова.jpg" alt="Frontend Developer Ольга Иванова" width="270" height="260" />
-						<h3>Ольга Иванова</h3>
-						<p>Frontend Developer</p>
+						<h3 class="team-name">Ольга Иванова</h3>
+						<p class="team-specialty">Frontend Developer</p>
 						<ul>
 							<li>
 								<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Instagram">Ссылка на Instagram</a>
@@ -130,8 +145,8 @@
 
 					<li>
 						<img src="./img/андрей-шевченко.jpg" alt="Marketing Андрей Шевченко" width="270" height="260" />
-						<h3>Андрей Шевченко</h3>
-						<p>Marketing</p>
+						<h3 class="team-name">Андрей Шевченко</h3>
+						<p class="team-specialty">Marketing</p>
 						<ul>
 							<li>
 								<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Instagram">Ссылка на Instagram</a>
@@ -148,8 +163,8 @@
 
 					<li>
 						<img src="./img/иван-николаев.jpg" alt="UI Designer Иван Николаев" width="270" height="260" />
-						<h3>Иван Николаев</h3>
-						<p>UI Designer</p>
+						<h3 class="team-name">Иван Николаев</h3>
+						<p class="team-specialty">UI Designer</p>
 						<ul>
 							<li>
 								<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Instagram">Ссылка на Instagram</a>
@@ -167,7 +182,7 @@
 			</section>
 			<!-- Секция Постоянные клиенты -->
 			<section>
-				<h2>Постоянные клиенты</h2>
+				<h2 class="clients-title">Постоянные клиенты</h2>
 				<ul>
 					<li>
 						<a href="#">
@@ -204,39 +219,51 @@
 		</main>
 
 		<!-- Футер -->
-		<footer>
+		<footer class="footer">
 			<div>
-				<a href="./">Web Studio</a>
+				<a href="./" class="logo">
+					<span>Web</span>
+					Studio
+				</a>
 
 				<address>
 					<ul>
-						<li><p>г. Киев, пр-т Леси Украинки, 26</p></li>
-						<li><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+						<li><p class="address">г. Киев, пр-т Леси Украинки, 26</p></li>
+						<li><a href="mailto:info@example.com" class="address-link">info@example.com</a></li>
+						<li><a href="tel:+380991111111" class="address-link">+38 099 111 11 11</a></li>
 					</ul>
 				</address>
 			</div>
 
 			<div>
-				<p>Присоединяйтесь</p>
+				<p class="social">Присоединяйтесь</p>
 				<ul>
 					<li>
-						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Instagram">Ссылка на Instagram</a>
+						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Instagram" class="social-link">
+							Ссылка на Instagram
+						</a>
 					</li>
 					<li>
-						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Twitter">Ссылка на Twitter</a>
+						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Twitter" class="social-link">
+							Ссылка на Twitter
+						</a>
 					</li>
 					<li>
-						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Facebook">Ссылка на Facebook</a>
+						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Facebook" class="social-link">
+							Ссылка на Facebook
+						</a>
 					</li>
 					<li>
-						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">Ссылка на LinkedIn</a>
+						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn" class="social-link">
+							Ссылка на LinkedIn
+						</a>
 					</li>
 				</ul>
 			</div>
 
 			<div>
-				<p>Подпишитесь на рассылку</p>
+				<p class="social">Подпишитесь на рассылку</p>
+				<button type="button" class="subscription-button">Подписаться</button>
 			</div>
 		</footer>
 	</body>
