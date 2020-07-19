@@ -61,6 +61,10 @@ footer .logo {
 	color: var(--title-text-color);
 }
 
+.nav-link.current {
+	color: var(--accent-color);
+}
+
 .contacts-link,
 .team-link {
 	color: var(--basic-text-color);
