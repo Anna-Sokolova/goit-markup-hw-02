@@ -53,7 +53,7 @@ footer .logo {
 .nav-link,
 .social-link,
 .team-link,
-.hero-button {
+.button {
 	text-decoration: none;
 }
 
@@ -100,8 +100,7 @@ footer .logo {
 	color: var(--white-text-color);
 }
 
-.hero-button,
-.subscription-button {
+.button {
 	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
