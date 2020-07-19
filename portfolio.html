@@ -3,8 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Web Studio-Portfolio</title>
-
+		<title>Web Studio</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./css/normalize.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
@@ -13,21 +16,24 @@
 		<!-- Шапка сайта -->
 		<header>
 			<nav>
-				<a href="./">Web Studio</a>
+				<a href="./" class="logo">
+					<span>Web</span>
+					Studio
+				</a>
 
-				<ul>
-					<li><a href="./index.html">Студия</a></li>
-					<li><a href="./portfolio.html">Портфолио</a></li>
-					<li><a href="#">Контакты</a></li>
+				<ul class="nav">
+					<li><a href="./index.html" class="nav-link">Студия</a></li>
+					<li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+					<li><a href="#" class="nav-link">Контакты</a></li>
 				</ul>
 			</nav>
 
-			<ul>
+			<ul class="contacts">
 				<li>
-					<a href="mailto:info@devstudio.com">info@devstudio.com</a>
+					<a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
 				</li>
 				<li>
-					<a href="tel:+380961111111">+38 096 111 11 11</a>
+					<a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a>
 				</li>
 			</ul>
 		</header>
@@ -38,11 +44,11 @@
 				<h1 hidden>Портфолио</h1>
 				<div>
 					<ul>
-						<li><button type="button">Все</button></li>
-						<li><button type="button">Веб-сайты</button></li>
-						<li><button type="button">Приложения</button></li>
-						<li><button type="button">Дизайн</button></li>
-						<li><button type="button">Маркетинг</button></li>
+						<li><button type="button" class="filter-button">Все</button></li>
+						<li><button type="button" class="filter-button">Веб-сайты</button></li>
+						<li><button type="button" class="filter-button">Приложения</button></li>
+						<li><button type="button" class="filter-button">Дизайн</button></li>
+						<li><button type="button" class="filter-button">Маркетинг</button></li>
 					</ul>
 				</div>
 				<div>
@@ -50,9 +56,9 @@
 						<li>
 							<a href="#">
 								<img src="./img/portfolio/технокряк.jpg" alt="Пример работы Технокряк" width="370" />
-								<h2>Технокряк</h2>
-								<p>Веб-сайт</p>
-								<p>
+								<h2 class="project-title">Технокряк</h2>
+								<p class="project-feature">Веб-сайт</p>
+								<p class="project-text">
 									Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
 									цифрового шпионажа и атак на защищённые сервера конкурентов.
 								</p>
@@ -65,9 +71,9 @@
 									alt="Пример работы Постер New Orlean vs Golden Star"
 									width="370"
 								/>
-								<h2>Постер New Orlean vs Golden Star</h2>
-								<p>Дизайн</p>
-								<p>
+								<h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+								<p class="project-feature">Дизайн</p>
+								<p class="project-text">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium in nobis sequi odio quo id
 									repudiandae sit debitis expedita ea?
 								</p>
@@ -76,9 +82,9 @@
 						<li>
 							<a href="#">
 								<img src="./img/portfolio/ресторан-seafood.jpg" alt="Пример работы Ресторан Seafood" width="370" />
-								<h2>Ресторан Seafood</h2>
-								<p>Приложение</p>
-								<p>
+								<h2 class="project-title">Ресторан Seafood</h2>
+								<p class="project-feature">Приложение</p>
+								<p class="project-text">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit velit est necessitatibus
 									consequatur? Voluptate ut ab repellat repellendus reprehenderit?
 								</p>
@@ -87,9 +93,9 @@
 						<li>
 							<a href="#">
 								<img src="./img/portfolio/проект-prime.jpg" alt="Пример работы Проект Prime" width="370" />
-								<h2>Проект Prime</h2>
-								<p>Маркетинг</p>
-								<p>
+								<h2 class="project-title">Проект Prime</h2>
+								<p class="project-feature">Маркетинг</p>
+								<p class="project-text">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit velit est necessitatibus
 									consequatur? Voluptate ut ab repellat repellendus reprehenderit?
 								</p>
@@ -98,9 +104,9 @@
 						<li>
 							<a href="#">
 								<img src="./img/portfolio/проект-boxes.jpg" alt="Пример работы Проект Boxes" width="370" />
-								<h2>Проект Boxes</h2>
-								<p>Приложение</p>
-								<p>
+								<h2 class="project-title">Проект Boxes</h2>
+								<p class="project-feature">Приложение</p>
+								<p class="project-text">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit velit est necessitatibus
 									consequatur? Voluptate ut ab repellat repellendus reprehenderit?
 								</p>
@@ -113,9 +119,9 @@
 									alt="Пример работы Inspiration has no Borders"
 									width="370"
 								/>
-								<h2>Inspiration has no Borders</h2>
-								<p>Веб-сайт</p>
-								<p>
+								<h2 class="project-title">Inspiration has no Borders</h2>
+								<p class="project-feature">Веб-сайт</p>
+								<p class="project-text">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit velit est necessitatibus
 									consequatur? Voluptate ut ab repellat repellendus reprehenderit?
 								</p>
@@ -128,9 +134,9 @@
 									alt="Пример работы Издание Limited Edition"
 									width="370"
 								/>
-								<h2>Издание Limited Edition</h2>
-								<p>Дизайн</p>
-								<p>
+								<h2 class="project-title">Издание Limited Edition</h2>
+								<p class="project-feature">Дизайн</p>
+								<p class="project-text">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit velit est necessitatibus
 									consequatur? Voluptate ut ab repellat repellendus reprehenderit?
 								</p>
@@ -139,9 +145,9 @@
 						<li>
 							<a href="#">
 								<img src="./img/portfolio/проект-lab.jpg" alt="Пример работы Проект LAB" width="370" />
-								<h2>Проект LAB</h2>
-								<p>Маркетинг</p>
-								<p>
+								<h2 class="project-title">Проект LAB</h2>
+								<p class="project-feature">Маркетинг</p>
+								<p class="project-text">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit velit est necessitatibus
 									consequatur? Voluptate ut ab repellat repellendus reprehenderit?
 								</p>
@@ -150,9 +156,9 @@
 						<li>
 							<a href="#">
 								<img src="./img/portfolio/growing-business.jpg" alt="Пример работы Growing Business" width="370" />
-								<h2>Growing Business</h2>
-								<p>Приложение</p>
-								<p>
+								<h2 class="project-title">Growing Business</h2>
+								<p class="project-feature">Приложение</p>
+								<p class="project-text">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit velit est necessitatibus
 									consequatur? Voluptate ut ab repellat repellendus reprehenderit?
 								</p>
@@ -164,41 +170,53 @@
 		</main>
 
 		<!-- Футер -->
-		<footer>
+		<footer class="footer">
 			<div>
-				<a href="./">Web Studio</a>
+				<a href="./" class="logo">
+					<span>Web</span>
+					Studio
+				</a>
 
 				<address>
 					<ul>
 						<li>
-							<p>г. Киев, пр-т Леси Украинки, 26</p>
+							<p class="address">г. Киев, пр-т Леси Украинки, 26</p>
 						</li>
-						<li><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+						<li><a href="mailto:info@example.com" class="address-link">info@example.com</a></li>
+						<li><a href="tel:+380991111111" class="address-link">+38 099 111 11 11</a></li>
 					</ul>
 				</address>
 			</div>
 
 			<div>
-				<p>Присоединяйтесь</p>
+				<p class="social">Присоединяйтесь</p>
 				<ul>
 					<li>
-						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Instagram">Ссылка на Instagram</a>
+						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Instagram" class="social-link">
+							Ссылка на Instagram
+						</a>
 					</li>
 					<li>
-						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Twitter">Ссылка на Twitter</a>
+						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Twitter" class="social-link">
+							Ссылка на Twitter
+						</a>
 					</li>
 					<li>
-						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Facebook">Ссылка на Facebook</a>
+						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="Facebook" class="social-link">
+							Ссылка на Facebook
+						</a>
 					</li>
 					<li>
-						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">Ссылка на LinkedIn</a>
+						<a href="#" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn" class="social-link">
+							Ссылка на LinkedIn
+						</a>
 					</li>
 				</ul>
 			</div>
 
 			<div>
-				<p>Подпишитесь на рассылку</p>
+				<p class="social">Подпишитесь на рассылку</p>
+				<button type="button" class="subscription-button">Подписаться</button>
 			</div>
 		</footer>
 	</body>
